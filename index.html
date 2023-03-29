@@ -1,0 +1,1105 @@
+<!DOCTYPE html><html dir="ltr" lang="pt-BR" prefix="og: https://ogp.me/ns#" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking html_header_topbar_active html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_minimal_header_shadow html_elegant-blog html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_3 av-cookies-no-cookie-consent av-no-preview html_text_menu_active  avia_desktop  js_active  avia_transform  avia_transform3d  avia_transform  avia_transform3d "><head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+<meta charset="UTF-8">
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+
+		<!-- All in One SEO 4.3.2 - aioseo.com -->
+		<meta name="description" content="Hospital Veterinário Saúde fica aberto 24 horas por dia e é a sua clínica veterinária pronta para atender seu companheiro. Agendamento de exames, emergência e muito mais!">
+		<meta name="robots" content="max-image-preview:large">
+		<link rel="canonical" href="https://hospitalveterinariosaude.com.br/">
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.3.2 ">
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:site_name" content="HVS - Hospital Veterinário Saúde - Hospital Veterinário">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Hospital Veterinário Saúde - Clínica Veterinária 24 horas">
+		<meta property="og:description" content="Hospital Veterinário Saúde fica aberto 24 horas por dia e é a sua clínica veterinária pronta para atender seu companheiro. Agendamento de exames, emergência e muito mais!">
+		<meta property="og:url" content="https://hospitalveterinariosaude.com.br/">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Hospital Veterinário Saúde - Clínica Veterinária 24 horas">
+		<meta name="twitter:description" content="Hospital Veterinário Saúde fica aberto 24 horas por dia e é a sua clínica veterinária pronta para atender seu companheiro. Agendamento de exames, emergência e muito mais!">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/hospitalveterinariosaude.com.br\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/hospitalveterinariosaude.com.br\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/hospitalveterinariosaude.com.br\/","name":"In\u00edcio","description":"Hospital Veterin\u00e1rio Sa\u00fade fica aberto 24 horas por dia e \u00e9 a sua cl\u00ednica veterin\u00e1ria pronta para atender seu companheiro. Agendamento de exames, emerg\u00eancia e muito mais!","url":"https:\/\/hospitalveterinariosaude.com.br\/"}}]},{"@type":"Organization","@id":"https:\/\/hospitalveterinariosaude.com.br\/#organization","name":"HVS - Hospital Veterin\u00e1rio Sa\u00fade","url":"https:\/\/hospitalveterinariosaude.com.br\/"},{"@type":"WebPage","@id":"https:\/\/hospitalveterinariosaude.com.br\/#webpage","url":"https:\/\/hospitalveterinariosaude.com.br\/","name":"Hospital Veterin\u00e1rio Sa\u00fade - Cl\u00ednica Veterin\u00e1ria 24 horas","description":"Hospital Veterin\u00e1rio Sa\u00fade fica aberto 24 horas por dia e \u00e9 a sua cl\u00ednica veterin\u00e1ria pronta para atender seu companheiro. Agendamento de exames, emerg\u00eancia e muito mais!","inLanguage":"pt-BR","isPartOf":{"@id":"https:\/\/hospitalveterinariosaude.com.br\/#website"},"breadcrumb":{"@id":"https:\/\/hospitalveterinariosaude.com.br\/#breadcrumblist"},"datePublished":"2019-09-19T03:36:05-03:00","dateModified":"2023-01-19T13:13:44-03:00"},{"@type":"WebSite","@id":"https:\/\/hospitalveterinariosaude.com.br\/#website","url":"https:\/\/hospitalveterinariosaude.com.br\/","name":"HVS - Hospital Veterin\u00e1rio Sa\u00fade","description":"Hospital Veterin\u00e1rio","inLanguage":"pt-BR","publisher":{"@id":"https:\/\/hospitalveterinariosaude.com.br\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/hospitalveterinariosaude.com.br\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Hospital Veterinário Saúde - Clínica Veterinária 24 horas</title><link rel="stylesheet" href="css/a8eb24452c6b0f3fdae71d20011e4aca.css" media="all" data-minify="1">
+	<meta name="description" content="Hospital veterinário no bairro da Saúde Zona Sul. Atendimento para seu cão e gato. Nosso pronto socorro atende emergências pet 24 horas em nossa clínica">
+	<link rel="canonical" href="https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Hospital Veterinário Saúde | (11) 5594 -1758 | Clínica Veterinária 24horas.">
+	<meta property="og:description" content="Oferecemos completa infra estrutura e médicos veterinários especializados. Hospital Veterinário Saúde | (11) 5594 -1758 | Clínica Veterinária 24horas.">
+	<meta property="og:url" content="https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas">
+	<meta property="og:site_name" content="HVS - Hospital Veterinário Saúde">
+	<meta property="article:publisher" content="https://www.facebook.com/hospitalveterinariosaude/">
+	<meta property="article:modified_time" content="2023-01-19T13:13:44+00:00">
+	<meta property="og:image" content="images/redes-sociais-hvs.png">
+	<meta property="og:image:width" content="800">
+	<meta property="og:image:height" content="480">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Hospital Veterinário Saúde | (11) 5594 -1758 | Clínica Veterinária 24horas.">
+	<meta name="twitter:description" content="Oferecemos completa infra estrutura e médicos veterinários especializados. Hospital Veterinário Saúde | (11) 5594 -1758 | Clínica Veterinária 24horas.">
+	<meta name="twitter:image" content="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/redes-sociais-hvs.png">
+	<meta name="twitter:site" content="@ClinicaVet24hrs">
+	<meta name="twitter:label1" content="Est. tempo de leitura">
+	<meta name="twitter:data1" content="33 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hospitalveterinariosaude.com.br/#organization","name":"Hospital Veterin\u00e1rio Sa\u00fade","url":"https://hospitalveterinariosaude.com.br/","sameAs":["https://www.facebook.com/hospitalveterinariosaude/","https://www.instagram.com/hospitalveterinariosaude/","https://twitter.com/ClinicaVet24hrs"],"logo":{"@type":"ImageObject","@id":"https://hospitalveterinariosaude.com.br/#logo","inLanguage":"pt-BR","url":"https://hospitalveterinariosaude.com.br/wp-content/uploads/2020/01/logo-hospital-veterinario-saude.jpg","contentUrl":"https://hospitalveterinariosaude.com.br/wp-content/uploads/2020/01/logo-hospital-veterinario-saude.jpg","width":150,"height":150,"caption":"Hospital Veterin\u00e1rio Sa\u00fade"},"image":{"@id":"https://hospitalveterinariosaude.com.br/#logo"}},{"@type":"WebSite","@id":"https://hospitalveterinariosaude.com.br/#website","url":"https://hospitalveterinariosaude.com.br/","name":"HVS - Hospital Veterin\u00e1rio Sa\u00fade","description":"Hospital Veterin\u00e1rio","publisher":{"@id":"https://hospitalveterinariosaude.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hospitalveterinariosaude.com.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"ImageObject","@id":"https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas#primaryimage","inLanguage":"pt-BR","url":"https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/redes-sociais-hvs.png","contentUrl":"https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/redes-sociais-hvs.png","width":800,"height":480},{"@type":"WebPage","@id":"https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas#webpage","url":"https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas","name":"Hospital Veterin\u00e1rio Sa\u00fade Cl\u00ednica Pet Pronto Socorro 24 horas","isPartOf":{"@id":"https://hospitalveterinariosaude.com.br/#website"},"about":{"@id":"https://hospitalveterinariosaude.com.br/#organization"},"datePublished":"2019-09-19T03:36:05+00:00","dateModified":"2023-01-19T13:13:44+00:00","description":"Hospital veterin\u00e1rio no bairro da Sa\u00fade Zona Sul. Atendimento para seu c\u00e3o e gato. Nosso pronto socorro atende emerg\u00eancias pet 24 horas em nossa cl\u00ednica","breadcrumb":{"@id":"https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas"]}]},{"@type":"BreadcrumbList","@id":"https://hospitalveterinariosaude.com.br/hospital-veterinario-saude-clinica-veterinaria-24-horas#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"In\u00edcio"}]}]}</script>
+	<meta name="google-site-verification" content="SiH4PYuKJKDQKUWJQqEm4OFvfq3lYhMVfN6i3fHyaOY">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//maps.googleapis.com">
+<link rel="dns-prefetch" href="//maps.gstatic.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//apis.google.com">
+<link rel="dns-prefetch" href="//google-analytics.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//ssl.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//adservice.google.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//tpc.googlesyndication.com">
+<link rel="dns-prefetch" href="//youtube.com">
+<link rel="dns-prefetch" href="//i.ytimg.com">
+<link rel="dns-prefetch" href="//player.vimeo.com">
+<link rel="dns-prefetch" href="//api.pinterest.com">
+<link rel="dns-prefetch" href="//assets.pinterest.com">
+<link rel="dns-prefetch" href="//connect.facebook.net">
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//syndication.twitter.com">
+<link rel="dns-prefetch" href="//platform.instagram.com">
+<link rel="dns-prefetch" href="//referrer.disqus.com">
+<link rel="dns-prefetch" href="//c.disquscdn.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//cdn.ampproject.org">
+<link rel="dns-prefetch" href="//pixel.wp.com">
+<link rel="dns-prefetch" href="//disqus.com">
+<link rel="dns-prefetch" href="//s.gravatar.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//sitename.disqus.com">
+<link rel="dns-prefetch" href="//s7.addthis.com">
+<link rel="dns-prefetch" href="//platform.linkedin.com">
+<link rel="dns-prefetch" href="//w.sharethis.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//s1.wp.com">
+<link rel="dns-prefetch" href="//s2.wp.com">
+<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//ajax.microsoft.com">
+<link rel="dns-prefetch" href="//ajax.aspnetcdn.com">
+<link rel="dns-prefetch" href="//s3.amazonaws.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//github.githubassets.com">
+<link rel="dns-prefetch" href="//ad.doubleclick.net">
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net">
+<link rel="dns-prefetch" href="//cm.g.doubleclick.net">
+<link rel="dns-prefetch" href="//stats.buysellads.com">
+<link rel="dns-prefetch" href="//s3.buysellads.com">
+
+<link rel="alternate" type="application/rss+xml" title="Feed para HVS - Hospital Veterinário Saúde »" href="https://hospitalveterinariosaude.com.br/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para HVS - Hospital Veterinário Saúde »" href="https://hospitalveterinariosaude.com.br/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.14.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script type="rocketlazyloadscript" src="//www.googletagmanager.com/gtag/js?id=UA-70672532-1" data-cfasync="false" data-wpfc-render="false" data-rocket-type="text/javascript" async></script>
+			<script type="rocketlazyloadscript" data-cfasync="false" data-wpfc-render="false" data-rocket-type="text/javascript">
+				var mi_version = '8.14.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-70672532-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = monsterinsights_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+															__gtagTracker('config', 'UA-70672532-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		
+<!-- google webfont font replacement -->
+
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+
+				(function() {
+					
+					/*	check if webfonts are disabled by user setting via cookie - or user must opt in.	*/
+					var html = document.getElementsByTagName('html')[0];
+					var cookie_check = html.className.indexOf('av-cookies-needs-opt-in') >= 0 || html.className.indexOf('av-cookies-can-opt-out') >= 0;
+					var allow_continue = true;
+					var silent_accept_cookie = document.cookie.match(/aviaCookieSilentConsent/);
+
+					if( cookie_check && ! silent_accept_cookie )
+					{
+						if( ! document.cookie.match(/aviaCookieConsent/) || sessionStorage.getItem( 'aviaCookieRefused' ) )
+						{
+							allow_continue = false;
+						}
+						else
+						{
+							if( ! document.cookie.match(/aviaPrivacyRefuseCookiesHideBar/) )
+							{
+								allow_continue = false;
+							}
+							else if( ! document.cookie.match(/aviaPrivacyEssentialCookiesEnabled/) )
+							{
+								allow_continue = false;
+							}
+							else if( document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/) )
+							{
+								allow_continue = false;
+							}
+						}
+					}
+					
+					if( allow_continue )
+					{
+						var f = document.createElement('link');
+					
+						f.type 	= 'text/css';
+						f.rel 	= 'stylesheet';
+						f.href 	= '//fonts.googleapis.com/css?family=Oswald%7COpen+Sans:400,600%7CRoboto:100,400,700';
+						f.id 	= 'avia-google-webfont';
+
+						document.getElementsByTagName('head')[0].appendChild(f);
+					}
+				})();
+			
+			</script>
+			
+
+
+
+
+
+
+
+
+
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(images/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js" defer></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js" defer></script>
+<script type="text/javascript" src="js/frontend-gtag.min.js" id="monsterinsights-frontend-script-js" defer></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/hospitalveterinariosaude.com.br","hash_tracking":"false","ua":"UA-70672532-1","v4_id":""};/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="js/script.js" id="shortcode-for-current-date-script-js" defer></script>
+<script type="text/javascript" src="js/jq-sticky-anything.min.js" id="stickyAnythingLib-js" defer></script>
+<link rel="https://api.w.org/" href="https://hospitalveterinariosaude.com.br/wp-json/"><link rel="alternate" type="application/json" href="https://hospitalveterinariosaude.com.br/wp-json/wp/v2/pages/3"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hospitalveterinariosaude.com.br/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://hospitalveterinariosaude.com.br/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.6">
+<link rel="shortlink" href="https://hospitalveterinariosaude.com.br/">
+
+<link rel="preload" as="font" href="https://hospitalveterinariosaude.com.br/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff" crossorigin><link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="alternate" type="application/rss+xml" title="HVS - Hospital Veterinário Saúde RSS2 Feed" href="https://hospitalveterinariosaude.com.br/feed/">
+<link rel="pingback" href="https://hospitalveterinariosaude.com.br/xmlrpc.php">
+
+<style type="text/css" media="screen">
+ #top #header_main > .container, #top #header_main > .container .main_menu  .av-main-nav > li > a, #top #header_main #menu-item-shop .cart_dropdown_link{ height:135px; line-height: 135px; }
+ .html_top_nav_header .av-logo-container{ height:135px;  }
+ .html_header_top.html_header_sticky #top #wrap_all #main{ padding-top:165px; } 
+</style>
+<!--[if lt IE 9]><script src="https://hospitalveterinariosaude.com.br/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="images/logo_hvs_site2.jpg" type="image/x-icon">
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script>		<style type="text/css" id="wp-custom-css">
+			div .logo {
+    float: left;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+	  height:100%!important;
+	  width:100%!important;
+}		</style>
+		<style type="text/css">
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal; font-display: auto;
+src: url('fonts/entypo-fontello.eot');
+src: url('fonts/entypo-fontello.eot#iefix') format('embedded-opentype'), 
+url('fonts/entypo-fontello.woff') format('woff'), 
+url('fonts/entypo-fontello.ttf') format('truetype'), 
+url('fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+
+@font-face {font-family: 'light_'; font-weight: normal; font-style: normal; font-display: auto;
+src: url('fonts/light_.eot');
+src: url('fonts/light_.eot#iefix') format('embedded-opentype'), 
+url('fonts/light_.woff') format('woff'), 
+url('fonts/light_.ttf') format('truetype'), 
+url('fonts/light_.svg#light_') format('svg');
+} #top .avia-font-light_, body .avia-font-light_, html body [data-av_iconfont='light_']:before{ font-family: 'light_'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.6.2
+Installed: enfold
+AviaFramework Version: 5.0
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0.1
+ML:256-PU:28-PLA:19
+WP:5.8.6
+Compress: CSS:all theme files - JS:all theme files
+Updates: disabled
+PLAu:18
+--><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+</head>
+
+
+
+
+<body id="top" class="home privacy-policy page-template-default page page-id-3  rtl_columns stretched oswald open_sans no_sidebar_border" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<script>var ewww_webp_supported=false;</script>
+
+	
+	<div id="wrap_all">
+
+	
+<header id="header" class="all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_custom av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_minimal_header av_minimal_header_shadow av_bottom_nav_disabled  av_header_border_disabled" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+
+		<div id="header_meta" class="container_wrap container_wrap_meta  av_icon_active_right av_extra_header_active av_secondary_left av_phone_active_right av_entry_id_3">
+		
+			      <div class="container">
+			      <ul class="noLightbox social_bookmarks icon_count_4"><li class="social_bookmarks_mail av-social-link-mail social_icon_1"><a aria-label="Link to Mail" href="mailto:contato@hospitalveterinariosaude.com.br" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Mail"><span class="avia_hidden_link_text">Mail</span></a></li><li class="social_bookmarks_twitter av-social-link-twitter social_icon_2"><a target="_blank" aria-label="Link to Twitter" href="https://twitter.com/ClinicaVet24hrs" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Twitter"><span class="avia_hidden_link_text">Twitter</span></a></li><li class="social_bookmarks_facebook av-social-link-facebook social_icon_3"><a target="_blank" aria-label="Link to Facebook" href="https://www.facebook.com/hospitalveterinariosaude/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Facebook"><span class="avia_hidden_link_text">Facebook</span></a></li><li class="social_bookmarks_instagram av-social-link-instagram social_icon_4"><a target="_blank" aria-label="Link to Instagram" href="https://www.instagram.com/hospitalveterinariosaude/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Instagram"><span class="avia_hidden_link_text">Instagram</span></a></li></ul><nav class="sub_menu" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="avia2-menu" class="menu"><li id="menu-item-840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-840"><a href="https://kairosmarketingdigital.com.br/hvs/como-chegar-a-clinica-veterinaria/"></a><h6><a href="https://kairosmarketingdigital.com.br/hvs/como-chegar-a-clinica-veterinaria/"><span style="color: #ffffff;">R. Nossa Senhora da Saúde, 366 Jardim Previdência – São Paulo/SP</span></a></h6></li>
+</ul></nav><div class="phone-info with_nav"><span><h5><span style="color: #ffffff;">Atendimento 24 Horas: (11) 5594 -1758</span></h5></span></div>			      </div>
+		</div>
+
+		<div id="header_main" class="container_wrap container_wrap_logo">
+	
+        <div class="container av-logo-container"><div class="inner-container"><span class="logo"><a href="https://hospitalveterinariosaude.com.br/"><img height="100" width="300" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20300%20100&#x27;%3E%3C/svg%3E" alt="HVS - Hospital Veterinário Saúde" title data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg"><noscript><img height="100" width="300" src="images/logo-site.jpg" alt="HVS - Hospital Veterinário Saúde" title></noscript></a></span><nav class="main_menu" data-selectname="Selecione uma página" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-2857" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-mega-parent  menu-item-top-level menu-item-top-level-1"><a href="https://hospitalveterinariosaude.com.br" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">HOSPITAL VETERINÁRIO ˅</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+<div class="avia_mega_div avia_mega2 six units">
+
+<ul class="sub-menu">
+	<li id="menu-item-2858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units  avia_mega_menu_columns_first"><span class="mega_menu_title heading-color av-special-font">INSTITUCIONAL</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://hospitalveterinariosaude.com.br/hospital-veterinario/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Hospital Veterinário</span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-2095" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/hospital-veterinario-saude/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Hospital Veterinário Saúde – Quem Somos</span></a></li>
+			<li id="menu-item-2126" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/historia-do-hospital-veterinario/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">História Hospital Veterinário</span></a></li>
+			<li id="menu-item-2168" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/missao/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Missão/Visão/Valores</span></a></li>
+			<li id="menu-item-2172" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/nossa-equipe/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Nossa Equipe</span></a></li>
+			<li id="menu-item-2920" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/estrutura/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Estrutura</span></a></li>
+			<li id="menu-item-2189" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/galeria-de-fotos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Galeria de Fotos</span></a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-2859" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units avia_mega_menu_columns_last"><span class="mega_menu_title heading-color av-special-font">PARCEIROS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2337" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/parceiros/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Parceiros</span></a></li>
+	</ul>
+</li>
+</ul>
+
+</div>
+</li>
+<li id="menu-item-2861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-mega-parent  menu-item-top-level menu-item-top-level-2"><a href="#" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">NOTÍCIAS ˅</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+<div class="avia_mega_div avia_mega3 nine units">
+
+<ul class="sub-menu">
+	<li id="menu-item-2862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_3 three units  avia_mega_menu_columns_first"><span class="mega_menu_title heading-color av-special-font">NOTÍCIAS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2109" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/noticias/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Notícias</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_3 three units "><span class="mega_menu_title heading-color av-special-font">DICAS SOBRE PETS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2228" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/dicas-sobre-pets/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Dicas Sobre Pets</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-637" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_3 three units avia_mega_menu_columns_last"><span class="mega_menu_title heading-color av-special-font">CURSOS E EVENTOS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2204" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/cursos-sao-paulo/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Cursos Veterinários São Paulo</span></a></li>
+	</ul>
+</li>
+</ul>
+
+</div>
+</li>
+<li id="menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-mega-parent  menu-item-top-level menu-item-top-level-3"><a href="https://hospitalveterinariosaude.com.br/servicos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">SERVIÇOS ˅</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+<div class="avia_mega_div avia_mega2 six units">
+
+<ul class="sub-menu">
+	<li id="menu-item-2863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units  avia_mega_menu_columns_first"><span class="mega_menu_title heading-color av-special-font">NOSSOS SERVIÇOS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-1935" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/analises-clinicas-e-patologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/microscopio-1.svg"><noscript><img src="fonts/microscopio-1.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;"></noscript><span>Análises Clínicas e Patologia</span></span></a></li>
+		<li id="menu-item-1946" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/banco-de-sangue-e-transfusao/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/veterinario-1.svg"><noscript><img src="fonts/veterinario-1.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;"></noscript><span>Banco de Sangue e Transfusão</span></span></a></li>
+		<li id="menu-item-1957" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/cirurgias-veterinarias/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.1em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/bisturi.svg"><noscript><img src="fonts/bisturi.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.1em;"></noscript><span>Cirurgias Veterinárias</span></span></a></li>
+		<li id="menu-item-1976" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/clinica-de-animais-silvestres/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.5em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/papagaio.svg"><noscript><img src="fonts/papagaio.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.5em;"></noscript><span>Clínica de Animais Silvestres</span></span></a></li>
+		<li id="menu-item-1988" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/clinica-veterinaria-e-vacinas/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/seringa.svg"><noscript><img src="fonts/seringa.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;"></noscript><span>Clínica Veterinária e Vacinas</span></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units avia_mega_menu_columns_last">
+	<ul class="sub-menu">
+		<li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/diagnostico-por-imagem/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/cuidados-de-saude.svg"><noscript><img src="fonts/cuidados-de-saude.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;"></noscript><span>Diagnóstico por Imagem</span></span></a></li>
+		<li id="menu-item-2004" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/emergencia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/ambulancia.svg"><noscript><img src="fonts/ambulancia.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;"></noscript><span>Emergência Veterinária</span></span></a></li>
+		<li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/internacao-de-animais/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.4em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/veterinario-2.svg"><noscript><img src="fonts/veterinario-2.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.4em;"></noscript><span>Internação de Animais</span></span></a></li>
+		<li id="menu-item-2022" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/medicina-preventiva-de-caes-e-gatos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/cachorro.svg"><noscript><img src="fonts/cachorro.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.2em;"></noscript><span>Medicina Preventiva Cães e Gatos</span></span></a></li>
+		<li id="menu-item-2024" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/uti-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/saude.svg"><noscript><img src="fonts/saude.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;"></noscript><span>UTI Veterinária</span></span></a></li>
+	</ul>
+</li>
+</ul>
+
+</div>
+</li>
+<li id="menu-item-2232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-mega-parent  menu-item-top-level menu-item-top-level-4"><a href="https://hospitalveterinariosaude.com.br/especialidades/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">ESPECIALIDADES ˅</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+<div class="avia_mega_div avia_mega2 six units">
+
+<ul class="sub-menu">
+	<li id="menu-item-2881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units  avia_mega_menu_columns_first"><span class="mega_menu_title heading-color av-special-font">ESPECIALIDADES</span>
+	<ul class="sub-menu">
+		<li id="menu-item-2262" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/acupuntura-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Acupuntura Veterinária</span></a></li>
+		<li id="menu-item-3118" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/anestesia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Anestesia Veterinária</span></a></li>
+		<li id="menu-item-2267" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/cardiologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Cardiologia Veterinária</span></a></li>
+		<li id="menu-item-2287" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/dermatologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Dermatologia Veterinária</span></a></li>
+		<li id="menu-item-3274" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/endocrinologiavet/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Endocrinologia Veterinária</span></a></li>
+		<li id="menu-item-2302" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/hematologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Hematologia Veterinária</span></a></li>
+		<li id="menu-item-2277" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/celulas-tronco-4/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Tratamento com Células Tronco</span></a></li>
+		<li id="menu-item-2296" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/fisioterapia-e-reabilitacao/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Fisioterapia e Reabilitação</span></a></li>
+		<li id="menu-item-3273" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/gastroenterologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Gastroenterologia Veterinária</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units avia_mega_menu_columns_last">
+	<ul class="sub-menu">
+		<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/medicina-comportamental/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Medicina Comportamental Veterinária</span></a></li>
+		<li id="menu-item-3268" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/medicina-felina/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Medicina em Felinos</span></a></li>
+		<li id="menu-item-3272" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/nefrologiaeurologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Nefrologia e Urologia</span></a></li>
+		<li id="menu-item-3271" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/neurologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Neurologia Veterinária</span></a></li>
+		<li id="menu-item-3270" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/nutricao-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Nutrição Veterinária</span></a></li>
+		<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/odontologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Odontologia Veterinária</span></a></li>
+		<li id="menu-item-3269" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/oftalmologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Oftalmologia Veterinária</span></a></li>
+		<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/oncologia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Oncologia Veterinária</span></a></li>
+		<li id="menu-item-2329" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/ortopedia-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Ortopedia Veterinária</span></a></li>
+		<li id="menu-item-2889" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/diagnostico-por-imagem/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Raio-X Veterinário</span></a></li>
+	</ul>
+</li>
+</ul>
+
+</div>
+</li>
+<li id="menu-item-2923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-mega-parent  menu-item-top-level menu-item-top-level-5"><a href="https://hospitalveterinariosaude.com.br/exames/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">EXAMES ˅</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+<div class="avia_mega_div avia_mega2 six units">
+
+<ul class="sub-menu">
+	<li id="menu-item-2887" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units  avia_mega_menu_columns_first"><span class="mega_menu_title heading-color av-special-font">EXAMES LABORATORIAIS</span>
+	<ul class="sub-menu">
+		<li id="menu-item-3126" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/biologia-molecular-e-sorologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Biologia Molecular e Sorologia</span></a></li>
+		<li id="menu-item-3136" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/bioquimica/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Bioquímica</span></a></li>
+		<li id="menu-item-3144" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/citologia-patologia-microbiologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Citologia / Patologia / Microbiologia</span></a></li>
+		<li id="menu-item-3157" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/exames-dermatologicos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Dermatologia</span></a></li>
+		<li id="menu-item-3163" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/fezes/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Fezes</span></a></li>
+		<li id="menu-item-3149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/exames-hematologicos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Hematologia</span></a></li>
+		<li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/liquidos-cavitarios/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Líquidos Cavitários</span></a></li>
+		<li id="menu-item-3176" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/urina/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Urina</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children avia_mega_menu_columns_2 three units avia_mega_menu_columns_last"><span class="mega_menu_title heading-color av-special-font">EXAMES DE IMAGEM</span>
+	<ul class="sub-menu">
+		<li id="menu-item-3193" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/ecocardiograma-cardiologia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Ecocardiograma – Exames do Coração</span></a></li>
+		<li id="menu-item-3208" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/eletrocardiograma/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Eletrocardiograma</span></a></li>
+		<li id="menu-item-3207" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/endoscopia-broncoscopia/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Endoscopia, Broncoscopia e Rinoscopia</span></a></li>
+		<li id="menu-item-3215" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/pressao-arterial/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Pressão Arterial</span></a></li>
+		<li id="menu-item-3224" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/raio-x-caes-e-gatos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Raio X Cães e Gatos</span></a></li>
+		<li id="menu-item-3185" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://hospitalveterinariosaude.com.br/ultrassom-veterinario/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Ultrassom Cães e Gatos – Ultrassom Abdominal</span></a></li>
+	</ul>
+</li>
+</ul>
+
+</div>
+</li>
+<li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page av-menu-button av-menu-button-colored menu-item-top-level menu-item-top-level-6"><a href="https://hospitalveterinariosaude.com.br/como-chegar-a-clinica-veterinaria/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20512%20512&#x27;%3E%3C/svg%3E" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/localizacao.svg"><noscript><img src="fonts/localizacao.svg" class="_mi _before _svg" aria-hidden="true" width="512px" height="512px" style="width:2.3em;"></noscript><span>COMO CHEGAR</span></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special"><a aria-label="Pesquisa" href="?s=" rel="nofollow" data-avia-search-tooltip="
+
+<form role=" search" action="https://hospitalveterinariosaude.com.br/" id="searchform" method="get" class>
+	<div>
+		<input type="submit" value="" id="searchsubmit" class="button avia-font-entypo-fontello">
+		<input type="text" id="s" name="s" value placeholder="Pesquisa">
+			</div>
+" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"><span class="avia_hidden_link_text">Pesquisa</span></a></li><li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		<div class="header_bg"></div>
+
+<!-- end header -->
+</header>
+		
+	<div id="main" class="all_colors" data-scroll-offset="135">
+
+	<div class="main_color container_wrap_first container_wrap fullsize" style=" "><div class="container"><main role="main" itemprop="mainContentOfPage" class="template-page content  av-content-full alpha units"><div class="post-entry post-entry-type-page post-entry-3"><div class="entry-content-wrapper clearfix"><section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  av_inherit_color " style="color:#ffffff; " itemprop="text"><h1 style="text-align: center;">Hospital Veterinário Saúde – Clínica Veterinária 24 horas</h1>
+</div></section>
+<div class="flex_column av_one_half  flex_column_div av-zero-column-padding first  avia-builder-el-1  el_after_av_textblock  el_before_av_one_half  column-top-margin" style="border-radius:0px; "><div class="avia-image-container avia_animated_image avia_animate_when_almost_visible fade-in av-styling-    avia-builder-el-2  avia-builder-el-no-sibling  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/agendamento-de-exames/" class="avia_image"><img width="750" height="180" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20750%20180&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/exames-agendamento1-2.jpg"><noscript><img width="750" height="180" class="avia_image " src="images/exames-agendamento1-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div></div>
+<div class="flex_column av_one_half  flex_column_div av-zero-column-padding   avia-builder-el-3  el_after_av_one_half  el_before_av_section  avia-builder-el-last  column-top-margin" style="border-radius:0px; "><div class="avia-image-container avia_animated_image avia_animate_when_almost_visible fade-in av-styling-    avia-builder-el-4  avia-builder-el-no-sibling  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://app.ideainfo.com.br/exec/resultados.php?id=4" class="avia_image" target="_blank"><img width="750" height="180" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20750%20180&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/exames-resultados-1.jpg"><noscript><img width="750" height="180" class="avia_image " src="images/exames-resultados-1.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div></div>
+</div></div></main><!-- close content main element --></div></div><div id="av_section_1" class="avia-section main_color avia-section-no-padding avia-no-border-styling avia-bg-style-scroll  avia-builder-el-5  el_after_av_one_half  el_before_av_slideshow   av-medium-hide av-small-hide av-mini-hide container_wrap fullsize" style=" "><div class="container"><div class="template-page content  av-content-full alpha units"><div class="post-entry post-entry-type-page post-entry-3"><div class="entry-content-wrapper clearfix">
+<div style="height:20px" class="hr hr-invisible  av-medium-hide av-small-hide av-mini-hide  avia-builder-el-6  el_before_av_one_third  avia-builder-el-first "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_div first  avia-builder-el-7  el_after_av_hr  el_before_av_one_third  " style="-webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); z-index: 4;padding:10px; border-radius:0px; "><div style="height:1px; margin-top:-19px" class="hr hr-invisible   avia-builder-el-8  el_before_av_font_icon  avia-builder-el-first "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<span class="av_font_icon avia_animate_when_visible av-icon-style-  avia-icon-pos-center " style="color:#999999; border-color:#999999;"><span class="av-icon-char" style="font-size:40px;line-height:40px;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span></span>
+<div style="height:1px; margin-top:-40px" class="hr hr-invisible   avia-builder-el-10  el_after_av_font_icon  el_before_av_heading "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div style="padding-bottom:0px; margin:18 18 18 18; color:#999999;font-size:17px;" class="av-special-heading av-special-heading-h5 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-11  el_after_av_hr  el_before_av_hr  av-inherit-size "><h5 class="av-special-heading-tag " itemprop="headline">Tempo de Atendimento</h5><div class="special-heading-border"><div class="special-heading-inner-border" style="border-color:#999999"></div></div></div>
+<div style="height:1px; margin-top:-39px" class="hr hr-invisible   avia-builder-el-12  el_after_av_heading  avia-builder-el-last "><span class="hr-inner "><span class="hr-inner-style"></span></span></div></div><div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_div   avia-builder-el-13  el_after_av_one_third  el_before_av_one_third  " style="background: #206c79; padding:10px; background-color:#206c79; border-radius:0px; "><div style="padding-bottom:0px; margin:18 18 18 18; color:#ffffff;font-size:17px;" class="av-special-heading av-special-heading-h5 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-14  avia-builder-el-no-sibling  av-inherit-size "><h5 class="av-special-heading-tag " itemprop="headline">Consultas</h5><div class="special-heading-border"><div class="special-heading-inner-border" style="border-color:#ffffff"></div></div></div></div><div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_div   avia-builder-el-15  el_after_av_one_third  el_before_av_one_third  " style="background: #248ea0; padding:10px; background-color:#248ea0; border-radius:0px; "><div style="padding-bottom:0px; margin:18 18 18 18; color:#ffffff;font-size:17px;" class="av-special-heading av-special-heading-h5 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-16  avia-builder-el-no-sibling  av-inherit-size "><h5 class="av-special-heading-tag " itemprop="headline">Liberação de Internados</h5><div class="special-heading-border"><div class="special-heading-inner-border" style="border-color:#ffffff"></div></div></div></div><div class="flex_column_table av-equal-height-column-flextable -flextable"><div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_table_cell av-equal-height-column av-align-middle first  avia-builder-el-17  el_after_av_one_third  el_before_av_one_third  column-top-margin" style="padding:10px 10px 0 10px ; border-radius:0px; "><div style="height:20px" class="hr hr-invisible   avia-builder-el-18  el_before_av_textblock  avia-builder-el-first "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  av_inherit_color " style="font-size:13px; color:#999999; " itemprop="text"><p style="text-align: center;">São Paulo, 29 de março de 2023 13:31</p>
+</div></section></div><div class="av-flex-placeholder"></div><div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_table_cell av-equal-height-column av-align-middle   avia-builder-el-20  el_after_av_one_third  el_before_av_one_third  column-top-margin" style="background: #eaeaea; padding:7px 7px 0 7px ; background-color:#eaeaea; border-radius:0px; "><div style="padding-bottom:22px; font-size:22px;" class="av-special-heading av-special-heading-h5 meta-heading blockquote modern-quote modern-centered  avia-builder-el-21  el_before_av_hr  avia-builder-el-first  av-inherit-size "><h5 class="av-special-heading-tag " itemprop="headline">01:00 h</h5><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div style="height:1px; margin-top:-12px" class="hr hr-invisible   avia-builder-el-22  el_after_av_heading  avia-builder-el-last "><span class="hr-inner "><span class="hr-inner-style"></span></span></div></div><div class="av-flex-placeholder"></div><div class="flex_column av_one_third  av-animated-generic fade-in  av-hide-on-mobile  flex_column_table_cell av-equal-height-column av-align-middle   avia-builder-el-23  el_after_av_one_third  avia-builder-el-last  column-top-margin" style="background: #eaeaea; padding:7px 7px 0 7px ; background-color:#eaeaea; border-radius:0px; "><div style="padding-bottom:22px; font-size:22px;" class="av-special-heading av-special-heading-h5 meta-heading blockquote modern-quote modern-centered  avia-builder-el-24  el_before_av_hr  avia-builder-el-first  av-inherit-size "><h5 class="av-special-heading-tag " itemprop="headline">01:00 h</h5><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div style="height:1px; margin-top:-12px" class="hr hr-invisible   avia-builder-el-25  el_after_av_heading  avia-builder-el-last "><span class="hr-inner "><span class="hr-inner-style"></span></span></div></div></div><!--close column table wrapper. Autoclose: 1 -->
+</div></div></div><!-- close content main div --></div></div><div id="after_section_1" class="main_color av_default_container_wrap container_wrap fullsize" style=" "><div class="container"><div class="template-page content  av-content-full alpha units"><div class="post-entry post-entry-type-page post-entry-3"><div class="entry-content-wrapper clearfix">
+<div data-size="featured_large" data-lightbox_size="large" data-animation="fade" data-conditional_play data-ids="793,846,792" data-video_counter="0" data-autoplay="true" data-bg_slider="false" data-slide_height data-handle="av_slideshow" data-interval="9" data-class=" avia-builder-el-26  el_after_av_section  el_before_av_one_fourth  avia-builder-el-first  " data-el_id data-css_id data-scroll_down data-control_layout="av-control-hidden" data-custom_markup data-perma_caption data-autoplay_stopper data-image_attachment data-min_height="0px" data-default-height="42" class="avia-slideshow avia-slideshow-1  av-control-hidden av-default-height-applied avia-slideshow-featured_large av_slideshow  avia-builder-el-26  el_after_av_section  el_before_av_one_fourth  avia-builder-el-first   avia-fade-slider " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><ul class="avia-slideshow-inner " style="padding-bottom: 42%;"><li class=" slide-1 "><div data-rel="slideshow-1" class="avia-slide-wrap "><div class="avia-caption av-slideshow-caption"><div class="avia-inner-caption"><h2 class="avia-caption-title   av-medium-font-size-overwrite av-medium-font-size-16 av-small-font-size-overwrite av-small-font-size-16 av-mini-font-size-overwrite av-mini-font-size-16" itemprop="name">Consulta Veterinária</h2><div class="avia-caption-content  av-medium-font-size-overwrite av-medium-font-size-13 av-small-font-size-overwrite av-small-font-size-13 av-mini-font-size-overwrite av-mini-font-size-13 " itemprop="description"><p>Todos animais merecem cuidados veterinários compassivos.</p>
+</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%201500%20630&#x27;%3E%3C/svg%3E" width="1500" height="630" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/h1-rev-img-11a-1500x630.jpg"><noscript><img src="images/h1-rev-img-11a-1500x630.jpg" width="1500" height="630" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></div></li><li class=" slide-2 "><div data-rel="slideshow-1" class="avia-slide-wrap "><div class="avia-caption av-slideshow-caption"><div class="avia-inner-caption"><h2 class="avia-caption-title   av-medium-font-size-overwrite av-medium-font-size-16 av-small-font-size-overwrite av-small-font-size-16 av-mini-font-size-overwrite av-mini-font-size-16" itemprop="name">Consulta Veterinária</h2><div class="avia-caption-content  av-medium-font-size-overwrite av-medium-font-size-13 av-small-font-size-overwrite av-small-font-size-13 av-mini-font-size-overwrite av-mini-font-size-13 " itemprop="description"><p>Todos animais merecem cuidados veterinários compassivos.</p>
+</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%201500%20630&#x27;%3E%3C/svg%3E" width="1500" height="630" title="svp_homefeature_2_1_" alt itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/svp_homefeature_2_1_-1500x630.jpg"><noscript><img src="images/svp_homefeature_2_1_-1500x630.jpg" width="1500" height="630" title="svp_homefeature_2_1_" alt itemprop="thumbnailUrl"></noscript></div></li><li class=" slide-3 "><div data-rel="slideshow-1" class="avia-slide-wrap "><div class="avia-caption av-slideshow-caption"><div class="avia-inner-caption"><h2 class="avia-caption-title   av-medium-font-size-overwrite av-medium-font-size-16 av-small-font-size-overwrite av-small-font-size-16 av-mini-font-size-overwrite av-mini-font-size-16" itemprop="name">Consulta Veterinária</h2><div class="avia-caption-content  av-medium-font-size-overwrite av-medium-font-size-13 av-small-font-size-overwrite av-small-font-size-13 av-mini-font-size-overwrite av-mini-font-size-13 " itemprop="description"><p>Todos animais merecem cuidados veterinários compassivos.</p>
+</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%201500%20630&#x27;%3E%3C/svg%3E" width="1500" height="630" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/h1-rev-img-9-1500x630.jpg"><noscript><img src="images/h1-rev-img-9-1500x630.jpg" width="1500" height="630" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></div></li></ul><div class="avia-slideshow-arrows avia-slideshow-controls"><a href="#prev" class="prev-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Anterior</a><a href="#next" class="next-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Próximo</a></div><div class="avia-slideshow-dots avia-slideshow-controls"><a href="#1" class="goto-slide active">1</a><a href="#2" class="goto-slide ">2</a><a href="#3" class="goto-slide ">3</a></div></div>
+<div class="flex_column av_one_fourth  av-hide-on-mobile  av-break-at-tablet flex_column_div av-zero-column-padding first  avia-builder-el-27  el_after_av_slideshow  el_before_av_one_fourth  " style="border-radius:0px; "><div class="avia-builder-widget-area clearfix  avia-builder-el-28  avia-builder-el-no-sibling "><section id="text-10" class="widget clearfix widget_text"><h3 class="widgettitle">Especialidades</h3>			<div class="textwidget"><div style="height:11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/acupuntura-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/ACUPUNTURA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/ACUPUNTURA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/cardiologia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/CARDIOLOGIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/CARDIOLOGIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/celulas-tronco-4/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/CÉLULAS-TRONCO-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/C%C3%83_LULAS-TRONCO-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/clinica-veterinaria-24-horas/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/CLINICA-VETERINARIA.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/CLINICA-VETERINARIA.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/dermatologia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/DERMATOLOGIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/DERMATOLOGIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/fisioterapia-e-reabilitacao/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt title="FISIOTERAPIA E REABILITAÇÃO" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/FISIOTERAPIA-E-REABILITAÇÃO-1.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/FISIOTERAPIA-E-REABILITA%C3%83_%C3%83_O-1.jpg" alt title="FISIOTERAPIA E REABILITAÇÃO" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/hematologia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/HEMATOLOGIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/HEMATOLOGIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/medicina-comportamental/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/MEDICINA-COMPORTAMENTAL-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/MEDICINA-COMPORTAMENTAL-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/odontologia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/ODONTOLOGIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/ODONTOLOGIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/oncologia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/ONCOLOGIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/ONCOLOGIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="avia-image-container  av-styling-no-styling    avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><a href="https://hospitalveterinariosaude.com.br/ortopedia-veterinaria/" class="avia_image"><img width="244" height="46" class="avia_image " src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20244%2046&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/ORTOPEDIA-VETERINÁRIA-2.jpg"><noscript><img width="244" height="46" class="avia_image " src="images/ORTOPEDIA-VETERIN%C3%83_RIA-2.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" itemprop="thumbnailUrl"></noscript></a></div></div></div>
+<div style="height:1px; margin-top:-11px" class="hr hr-invisible  "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+</div>
+		<span class="seperator extralight-border"></span></section></div></div>
+<div class="flex_column av_one_fourth  av-animated-generic pop-up  av-break-at-tablet flex_column_div   avia-builder-el-29  el_after_av_one_fourth  el_before_av_one_fourth  " style="background: #f4f4f4; padding:15px 25px 15px 25px ; background-color:#f4f4f4; border-radius:0px; "><div style="padding-bottom:20px; margin:1.5em 0 0.5em 0; font-size:15px;" class="av-special-heading av-special-heading-h4  blockquote modern-quote modern-centered  avia-builder-el-30  el_before_av_image  avia-builder-el-first  av-inherit-size "><h4 class="av-special-heading-tag " itemprop="headline">ATENDIMENTO VETERINÁRIO 24 HORAS</h4><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div class="avia-image-container  av-styling-    avia-builder-el-31  el_after_av_heading  el_before_av_textblock  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><img class="avia_image" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20245%2090&#x27;%3E%3C/svg%3E" alt title="home_service2" height="90" width="245" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/home_service2.jpg"><noscript><img class="avia_image" src="images/home_service2.jpg" alt title="home_service2" height="90" width="245" itemprop="thumbnailUrl"></noscript></div></div></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " style="font-size:14px; " itemprop="text"><p style="text-align: center;">Oferecemos completa infra estrutura e médicos veterinários especializados para atender nossos pacientes com eficiência, buscando melhor cuidado e qualidade de vida ao seu pet.</p>
+</div></section>
+<div class="avia-button-wrap avia-button-center  avia-builder-el-33  el_after_av_textblock  avia-builder-el-last "><a href="https://hospitalveterinariosaude.com.br/clinica-veterinaria-24-horas/" class="avia-button av-icon-on-hover  avia-icon_select-yes-right-icon avia-color-custom avia-size-large avia-position-center " style="background-color:#733b47; border-color:#733b47; color:#ffffff; "><span class="avia_iconbox_title">SAIBA MAIS</span><span class="avia_button_icon avia_button_icon_right" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span></a></div></div>
+<div class="flex_column av_one_fourth  av-animated-generic pop-up  av-break-at-tablet flex_column_div   avia-builder-el-34  el_after_av_one_fourth  el_before_av_one_fourth  " style="background: #eaeaea; padding:15px 25px 15px 25px ; background-color:#eaeaea; border-radius:0; "><div style="padding-bottom:20px; margin:1.5em 0 0.5em 0; font-size:17px;" class="av-special-heading av-special-heading-h4  blockquote modern-quote modern-centered  avia-builder-el-35  el_before_av_image  avia-builder-el-first  av-inherit-size "><h4 class="av-special-heading-tag " itemprop="headline">EMERGÊNCIA 24 HORAS</h4><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div class="avia-image-container  av-styling-    avia-builder-el-36  el_after_av_heading  el_before_av_textblock  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><img class="avia_image" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20245%2090&#x27;%3E%3C/svg%3E" alt title="home_service3" height="90" width="245" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/home_service3.jpg"><noscript><img class="avia_image" src="images/home_service3.jpg" alt title="home_service3" height="90" width="245" itemprop="thumbnailUrl"></noscript></div></div></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " style="font-size:14px; " itemprop="text"><p style="text-align: center;">O Hospital Veterinário Saúde funciona 24 horas para casos emergentes. Se você precisa de consultas, cirurgias ou internações, entre em contato conosco pelo botão abaixo. Estamos sempre a disposição no Hospital.</p>
+</div></section>
+<div class="avia-button-wrap avia-button-center  avia-builder-el-38  el_after_av_textblock  avia-builder-el-last "><a href="https://hospitalveterinariosaude.com.br/agendamento-de-servicos/" class="avia-button av-icon-on-hover  avia-icon_select-yes-right-icon avia-color-custom avia-size-large avia-position-center " style="background-color:#733b47; border-color:#733b47; color:#ffffff; "><span class="avia_iconbox_title">ENTRAR EM CONTATO</span><span class="avia_button_icon avia_button_icon_right" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span></a></div></div>
+<div class="flex_column av_one_fourth  av-animated-generic pop-up  av-break-at-tablet flex_column_div   avia-builder-el-39  el_after_av_one_fourth  el_before_av_one_third  " style="background: #f4f4f4; padding:15px 25px 15px 40px ; background-color:#f4f4f4; border-radius:0; "><div style="padding-bottom:20px; margin:1.5em 0 0.5em 0; font-size:17px;" class="av-special-heading av-special-heading-h4  blockquote modern-quote modern-centered  avia-builder-el-40  el_before_av_image  avia-builder-el-first  av-inherit-size "><h4 class="av-special-heading-tag " itemprop="headline">INTERNAÇÕES</h4><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div class="avia-image-container  av-styling-    avia-builder-el-41  el_after_av_heading  el_before_av_textblock  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><img class="avia_image" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20245%2090&#x27;%3E%3C/svg%3E" alt title="home_service1" height="90" width="245" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/09/home_service1.jpg"><noscript><img class="avia_image" src="images/home_service1.jpg" alt title="home_service1" height="90" width="245" itemprop="thumbnailUrl"></noscript></div></div></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " style="font-size:14px; " itemprop="text"><p style="text-align: center;">No nosso Hospital Veterinário priorizamos o bem-estar do seu pet, com um atendimento personalizado, continuo e intensivo. Utilizamos aparelhos multiprofissionais para a internação de animais.</p>
+</div></section>
+<div class="avia-button-wrap avia-button-center  avia-builder-el-43  el_after_av_textblock  avia-builder-el-last "><a href="https://hospitalveterinariosaude.com.br/internacao-de-animais/" class="avia-button av-icon-on-hover  avia-icon_select-yes-right-icon avia-color-custom avia-size-large avia-position-center " style="background-color:#733b47; border-color:#733b47; color:#ffffff; "><span class="avia_iconbox_title">SAIBA MAIS</span><span class="avia_button_icon avia_button_icon_right" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span></a></div></div>
+<div class="flex_column av_one_third  av-hide-on-mobile  av-break-at-tablet flex_column_div av-zero-column-padding first  avia-builder-el-44  el_after_av_one_fourth  el_before_av_two_third  column-top-margin" style="border-radius:0px; "><div class="avia-builder-widget-area clearfix  avia-builder-el-45  avia-builder-el-no-sibling "><div id="avia_fb_likebox-4" class="widget clearfix avia_fb_likebox"><h3 class="widgettitle">NOS SIGA NO FACEBOOK</h3><div class="av_facebook_widget_wrap "><div class="fb-page" data-width="500" data-href="https://www.facebook.com/hospitalveterinariosaude/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"></div></div></div></div><div id="avia_google_maps-2" class="widget clearfix avia_google_maps"><h3 class="widgettitle">LOCALIZAÇÃO DO HOSPITAL</h3><div class="av_gmaps_widget_main_wrap av_gmaps_main_wrap"><div id="av_gmap_0" class="avia-google-map-container avia-google-map-widget av_gmaps_show_unconditionally av-no-fallback-img" data-mapid="av_gmap_0" style=" height: 150px; width: 250px;"></div></div></div><div id="text-8" class="widget clearfix widget_text"><h3 class="widgettitle">Compartilhe</h3>			<div class="textwidget"><div class="av-social-sharing-box  "><div class="av-share-box"><ul class="av-share-box-list noLightbox"><li class="av-share-link av-social-link-facebook"><a target="_blank" aria-label="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://hospitalveterinariosaude.com.br/&t=Hospital%20Veterin%C3%A1rio%20Sa%C3%BAde%20%E2%80%93%20Cl%C3%ADnica%20Veterin%C3%A1ria%2024%20horas" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title data-avia-related-tooltip="Share on Facebook" rel="noopener"><span class="avia_hidden_link_text">Share on Facebook</span></a></li><li class="av-share-link av-social-link-twitter"><a target="_blank" aria-label="Share on Twitter" href="https://twitter.com/share?text=Hospital%20Veterin%C3%A1rio%20Sa%C3%BAde%20%E2%80%93%20Cl%C3%ADnica%20Veterin%C3%A1ria%2024%20horas&url=https://hospitalveterinariosaude.com.br/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title data-avia-related-tooltip="Share on Twitter" rel="noopener"><span class="avia_hidden_link_text">Share on Twitter</span></a></li><li class="av-share-link av-social-link-whatsapp"><a target="_blank" aria-label="Share on WhatsApp" href="https://api.whatsapp.com/send?text=https://hospitalveterinariosaude.com.br/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title data-avia-related-tooltip="Share on WhatsApp" rel="noopener"><span class="avia_hidden_link_text">Share on WhatsApp</span></a></li><li class="av-share-link av-social-link-mail"><a aria-label="Share by Mail" href="mailto:?subject=Hospital%20Veterin%C3%A1rio%20Sa%C3%BAde%20%E2%80%93%20Cl%C3%ADnica%20Veterin%C3%A1ria%2024%20horas&body=https://hospitalveterinariosaude.com.br/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title data-avia-related-tooltip="Share by Mail"><span class="avia_hidden_link_text">Share by Mail</span></a></li></ul></div></div>
+</div>
+		</div></div></div>
+<div class="flex_column av_two_third  av-break-at-tablet flex_column_div av-zero-column-padding   avia-builder-el-46  el_after_av_one_third  el_before_av_hr  column-top-margin" style="border-radius:0px; "><div style="padding-bottom:10px; " class="av-special-heading av-special-heading-h2  blockquote modern-quote modern-centered  avia-builder-el-47  el_before_av_image  avia-builder-el-first  "><h2 class="av-special-heading-tag  av-medium-font-size-overwrite av-medium-font-size-21 av-small-font-size-overwrite av-small-font-size-21 av-mini-font-size-overwrite av-mini-font-size-21" itemprop="headline">Hospital Veterinário Saúde – Clínica Veterinária 24 horas</h2><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div class="avia-image-container avia_animated_image avia_animate_when_almost_visible fade-in av-styling-    avia-builder-el-48  el_after_av_heading  el_before_av_textblock  avia-align-center " itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><div class="avia-image-overlay-wrap"><img class="avia_image" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%201500%20380&#x27;%3E%3C/svg%3E" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" height="380" width="1500" itemprop="thumbnailUrl" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/10/banner.jpg"><noscript><img class="avia_image" src="images/banner.jpg" alt="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" title="Hospital Veterinário Saúde - Clínica Veterinária 24 horas" height="380" width="1500" itemprop="thumbnailUrl"></noscript></div></div></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " style="font-size:14px; " itemprop="text"><h3>Hospital Veterinário Saúde – Clínica Veterinária 24 horas</h3>
+<p style="text-align: justify;">O Hospital Veterinário Saúde, conta com diversos serviços e um atendimento personalizado na Medicina Veterinária.</p>
+<h3>Humanização nos Serviços</h3>
+<p style="text-align: justify;">Nossos serviços são humanizados e diferenciado, tanto para os clientes quanto para os profissionais que trabalham conosco e os Veterinários que nos indicam. Um Hospital Veterinário completo a sua disposição.</p>
+</div></section>
+<div style="height:20px" class="hr hr-invisible   avia-builder-el-50  el_after_av_textblock  el_before_av_textblock "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " style="font-size:14px; " itemprop="text"><h3>Progresso Constante e Infraestrutura</h3>
+<p style="text-align: justify;">Estamos sempre em busca de melhorias no nosso Hospital Veterinário, procuramos sempre auxiliar no processo de diagnóstico, tratamento e também na recuperação mais breve de nossos pacientes.</p>
+<p style="text-align: justify;">Nosso Hospital Veterinário está disponível como o seu veterinário de cuidados primários, sendo disponibilizado como hospital de emergência 24 horas por dia.</p>
+<p style="text-align: justify;">Quando possível, os pacientes são tratados de forma ambulatorial e, em seguida, dirigidos de volta ao seu veterinário de cuidados primários para acompanhamento.</p>
+<p style="text-align: justify;">Os pacientes que necessitam de hospitalização imediata são transferidos para nossa Unidade de Cuidados Críticos ou Internação Veterinária. Trabalhamos de forma cooperativa com veterinários referentes, fornecendo todas as informações necessárias para o acompanhamento.</p>
+<p>Hospital Veterinário Saúde – Clínica Veterinária 24 horas.</p>
+</div></section></div>
+<div style="height:1px; margin-top:-35px" class="hr hr-invisible   avia-builder-el-52  el_after_av_two_third  el_before_av_heading "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div style="padding-bottom:10px; " class="av-special-heading av-special-heading-h2  blockquote modern-quote modern-centered  avia-builder-el-53  el_after_av_hr  el_before_av_hr  "><h2 class="av-special-heading-tag  av-medium-font-size-overwrite av-medium-font-size-21 av-small-font-size-overwrite av-small-font-size-21 av-mini-font-size-overwrite av-mini-font-size-21" itemprop="headline">Serviços Especializados para Seu Pet</h2><div class="av-subheading av-subheading_below   av-medium-font-size-overwrite av-medium-font-size-14 av-small-font-size-overwrite av-small-font-size-14 av-mini-font-size-overwrite av-mini-font-size-14" style="font-size:15px;"><p>Hospital Veterinário Saúde – Clínica Veterinária 24 horas</p>
+</div><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div style="height:20px" class="hr hr-invisible   avia-builder-el-54  el_after_av_heading  el_before_av_toggle_container "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div class="togglecontainer  av-minimal-toggle toggle_close_all  hasCurrentStyle avia-builder-el-55  el_after_av_hr  el_before_av_hr " data-currentstyle="color:#ffffff; border-color:#ffffff; background-color:#733b47; ">
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-1" class="toggler activeTitle" itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-1">Consultas Veterinárias<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-1-container" class="toggle_wrap active_tc" style="display:block;">            <div class="toggle_content invers-color " itemprop="text"><p>Oferecemos serviço de atendimento veterinário 24 horas em São Paulo, para consultas de rotina e de emergência que quanto mais rápida a intervenção melhor para recuperação de seu companheiro.<br>
+Nada mais importante que manter seu animal com uma boa saúde, devemos levar eles regularmente em uma consulta veterinária. O profissional irá examinar seu pet, recomendar medicamentos e outros procedimentos.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-2" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-2">Cirurgias Gerais<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-2-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Veterinários especializados em ortopedia visando o melhor tratamento e bem estar do paciente com qualidade de vida.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-3" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-3">Consultas Animais Exóticos<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-3-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Animais Exóticos: Com a necessidade de atendimento para cada espécie os médicos veterinários especialistas junto com o HVS vem de forma diferenciada e especifica cuidar e tratar da saúde dos pets silvestres e exóticos para uma vida saudável visando o bem estar no dia a dia e o tratamento mais adequado para cada enfermidade e necessidade do seu pet.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-4" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-4">Atendimento 24 horas por dia<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-4-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Oferecemos completa infra estrutura e médicos veterinários especializados para atender nossos pacientes com eficiência, buscando melhor cuidado e qualidade de vida ao seu pet. Clínica Veterinária 24 horas Completa.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-5" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-5">Ultrassonografia<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-5-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Diagnóstico por Imagem Ultrassonografia Abdominal: Atualmente um dos métodos de diagnóstico não invasivos, mais utilizado e versátil da medicina veterinária. Que exige dos médicos veterinários constante estudo, experiência e treinamento para um exame minucioso que nos permite encontrar alterações que nos levam ao diagnóstico e tratamento mais específico, rápida e eficaz.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-6" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-6">Ecodopplercardiograma<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-6-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Procedimento adotado em situações em que se faz necessária uma avaliação do tamanho do coração, além da velocidade com a qual o sangue está sendo bombeado por este órgão.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-7" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-7">Raio-X Digital<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-7-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Médicos veterinários e técnicos em radiologia para realizar um exame rápido, preciso e de qualidade.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-8" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-8">Exames Laboratoriais<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-8-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Exame de sangue: Um dos exames laboratoriais mais solicitados. Assim como nos humanos, a análise do sangue é realizada quando o pet não apresenta sinais claros de que está doente.</p>
+<p>Com ele é possível averiguar o que está circulando pelo corpo do animal. Geralmente, é solicitado uma vez ao ano, para prevenção de doenças. O exame de sangue, além da identificação de colesterol alto, infecções e erliquiose (doença do carrapato) pode até revelar células cancerígenas.</p>
+<p>Exames de Fezes e Urina: Todos os pets devem realizar como rotina os exames de fezes e urina. Esses exames laboratoriais podem demonstrar claramente a presença de verminoses e falta de nutrientes no corpo do animal. O exame de urina também revela se o animal tem problemas renais sérios ou facilmente tratáveis.</p>
+<p>Exame Retal: Embora seja desconfortável para o animal, por ser realizado na região anal, esse exame é extremamente importante. Ele é solicitado quando o pet apresenta dificuldades ou dores para defecar. Em cães mais idosos o exame auxilia na identificação de tumores.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-9" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-9">Odontologia Veterinária<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-9-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Médicos veterinários especializados em odontologia para melhorar e manter a saúde bucal do seu pet.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-10" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-10">Oncologia Veterinária<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-10-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Os animais, assim como as pessoas, podem apresentar diversos tipos de câncer, e a oncologia é a área da medicina veterinária que estuda e trata desta doença. Mas câncer, ao contrário do que tendemos a pensar, não é uma sentença de morte.</p>
+<p>O tratamento adequado, que pode incluir quimioterapia, cirurgia, tratamento com medicamentos e acupuntura, pode permitir que o animal viva bem e feliz por muito tempo.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-11" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-11">Fisioterapia Veterinária<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-11-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>A Fisioterapia Veterinária é de grande importância na recuperação de pacientes com diagnóstico de lesões ortopédicas ou neurológicas, e ainda como auxiliar no manejo do sobre peso, antes e/ou após o tratamento cirúrgico ou como coadjuvante no tratamento conservativo, proporcionando assim a recuperação em menor tempo, evitando complicações secundárias, promovendo melhor funcionalidade física e aumentando a qualidade de vida do paciente.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-12" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-12">Acupuntura Veterinária<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-12-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>A acupuntura é o ramo da Medicina Tradicional Chinesa (MTC), que apesar de relativamente nova no ocidente, tem sido usada por milhares de anos na China.</p>
+<p>Essa técnica consiste na introdução de agulhas na pele com o objetivo de estimular pontos específicos chamados de acupontos, além de ter o conceito que todos os órgãos do organismo devem estar em equilibro entre si e o meio ambiente.</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-13" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-13">Internação Cães<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-13-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Nossas baias são de fácil higienização, sempre com conforto e do tamanho correto para acomodar nossos pacientes conforme suas necessidades para uma melhor recuperação e qualidade de tratamento desde o tratamento menos complexo ao intensivo tendo acesso a todos os recursos necessários para a estabilização e qualidade de saúde dos nossos pacientes</p>
+            </div>        </div>    </div></section>
+<section class="av_toggle_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">    <div class="single_toggle" data-tags="{Todos} ">        <p data-fake-id="#toggle-id-14" class="toggler " itemprop="headline" data-hoverstyle="background-color: #733b47; color: #ffffff; " role="tab" tabindex="0" aria-controls="toggle-id-14">Internação para Gatos<span class="toggle_icon">        <span class="vert_icon"></span><span class="hor_icon"></span></span></p>        <div id="toggle-id-14-container" class="toggle_wrap ">            <div class="toggle_content invers-color " itemprop="text"><p>Nossas baias são de fácil higienização, sempre com conforto e do tamanho correto para acomodar nossos pacientes conforme suas necessidades para uma melhor recuperação e qualidade de tratamento desde o tratamento menos complexo ao intensivo tendo acesso a todos os recursos necessários para a estabilização e qualidade de saúde dos nossos pacientes</p>
+            </div>        </div>    </div></section>
+</div>
+<div style="height:1px; margin-top:-35px" class="hr hr-invisible   avia-builder-el-56  el_after_av_toggle_container  el_before_av_heading "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div style="padding-bottom:10px; " class="av-special-heading av-special-heading-h2  blockquote modern-quote modern-centered  avia-builder-el-57  el_after_av_hr  el_before_av_hr  "><h2 class="av-special-heading-tag  av-medium-font-size-overwrite av-medium-font-size-21 av-small-font-size-overwrite av-small-font-size-21 av-mini-font-size-overwrite av-mini-font-size-21" itemprop="headline">Dicas essenciais para cuidar de quem você mais ama</h2><div class="av-subheading av-subheading_below   av-medium-font-size-overwrite av-medium-font-size-14 av-small-font-size-overwrite av-small-font-size-14 av-mini-font-size-overwrite av-mini-font-size-14" style="font-size:15px;"><p>Hospital Veterinário Saúde – Clínica Veterinária 24 horas</p>
+</div><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div style="height:20px" class="hr hr-invisible   avia-builder-el-58  el_after_av_heading  el_before_av_postslider "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div data-autoplay="1" data-interval="7" data-animation="fade" data-show_slide_delay="90" class="avia-content-slider avia-content-slider-active avia-content-slider1 avia-content-slider-odd  avia-builder-el-59  el_after_av_hr  el_before_av_hr  " itemscope="itemscope" itemtype="https://schema.org/Blog"><div class="avia-content-slider-inner"><div class="slide-entry-wrap"><article class="slide-entry flex_column  post-entry post-entry-5331 slide-entry-overview slide-loop-1 slide-parity-odd  av_one_third first real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/lombalgia-em-caes-conheca-mais-sobre-o-problema/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-2702132_640-495x400.jpg"><noscript><img width="495" height="400" src="images/dog-2702132_640-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/lombalgia-em-caes-conheca-mais-sobre-o-problema/" title="Lombalgia em cães , conheça mais sobre o problema">Lombalgia em cães , conheça mais sobre o problema</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">A lombalgia em cães se trata de um problema muito comum com animais em diversas idades, inclusive em animais com maior idade.
+
+Ver um animal sentindo dor certamente pode ser uma situação que pode incomodar bastante os tutores, porém a…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/lombalgia-em-caes-conheca-mais-sobre-o-problema/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/lombalgia-em-caes-conheca-mais-sobre-o-problema/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-23T11:06:20-03:00">23 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-2702132_640.jpg</span>
+					   <span itemprop="height">427</span>
+					   <span itemprop="width">640</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-23 11:06:20</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-23 11:08:23</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Lombalgia em cães , conheça mais sobre o problema</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5329 slide-entry-overview slide-loop-2 slide-parity-even  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/cao-perdendo-massa-muscular/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/09/animal-15607_1920-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/09/animal-15607_1920-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/09/animal-15607_1920-495x400.jpg"><noscript><img width="495" height="400" src="images/animal-15607_1920-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/animal-15607_1920-495x400.jpg 495w, images/animal-15607_1920-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/cao-perdendo-massa-muscular/" title="Cão perdendo massa muscular">Cão perdendo massa muscular</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text"> 
+
+Ver um cão perdendo massa muscular , certamente se trata de um problema que pode trazer muita preocupação para diversos tutores. A grande verdade é que um cão perdendo peso pode trazer preocupação para quem estava acostumado…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/cao-perdendo-massa-muscular/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/cao-perdendo-massa-muscular/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T16:41:52-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/09/animal-15607_1920.jpg</span>
+					   <span itemprop="height">1280</span>
+					   <span itemprop="width">1920</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 16:41:52</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 16:41:52</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Cão perdendo massa muscular</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5326 slide-entry-overview slide-loop-3 slide-parity-odd  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/cao-macho-nao-quer-acasalar/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-1018125_1280-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-1018125_1280-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-1018125_1280-495x400.jpg"><noscript><img width="495" height="400" src="images/dog-1018125_1280-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/dog-1018125_1280-495x400.jpg 495w, images/dog-1018125_1280-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/cao-macho-nao-quer-acasalar/" title="Cão macho não quer acasalar e agora ?">Cão macho não quer acasalar e agora ?</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">Um cão macho que não quer acasalar certamente pode trazer muita preocupação para um tutor, justamente que a muitos tutores esperam novos membros na família pet.
+
+A grande verdade é que muita das vezes um cão que não quer acasalar,…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/cao-macho-nao-quer-acasalar/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/cao-macho-nao-quer-acasalar/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T15:50:05-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-1018125_1280.jpg</span>
+					   <span itemprop="height">853</span>
+					   <span itemprop="width">1280</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 15:50:05</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 15:50:59</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Cão macho não quer acasalar e agora ?</span></span></span></article></div><div class="slide-entry-wrap"><article class="slide-entry flex_column  post-entry post-entry-5320 slide-entry-overview slide-loop-4 slide-parity-odd  av_one_third first real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/problemas-gastricos-em-caes/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/puppy-1207816_1280-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/puppy-1207816_1280-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/puppy-1207816_1280-495x400.jpg"><noscript><img width="495" height="400" src="images/puppy-1207816_1280-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/puppy-1207816_1280-495x400.jpg 495w, images/puppy-1207816_1280-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/problemas-gastricos-em-caes/" title="Problemas Gástricos em cães">Problemas Gástricos em cães</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">Os problemas gástricos em cães podem ser mais comuns que muitos tutores pensam, justamente por acometerem cães de todas as idades.
+
+A grande verdade é que muitos animais hoje em dia são considerados como membros de uma família, portanto…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/problemas-gastricos-em-caes/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/problemas-gastricos-em-caes/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T14:54:49-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/puppy-1207816_1280.jpg</span>
+					   <span itemprop="height">924</span>
+					   <span itemprop="width">1280</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 14:54:49</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 14:54:49</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Problemas Gástricos em cães</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5317 slide-entry-overview slide-loop-5 slide-parity-even  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/doencas-de-pele-em-caes/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-423398_1280-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-423398_1280-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-423398_1280-495x400.jpg"><noscript><img width="495" height="400" src="images/dog-423398_1280-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/dog-423398_1280-495x400.jpg 495w, images/dog-423398_1280-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/doencas-de-pele-em-caes/" title="Doenças de pele em cães">Doenças de pele em cães</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">As doenças de pele em cães podem ser mais comuns que pensamos no decorrer da vida desses animais, e a grande verdade é que podem ser tratadas e terem sucesso no tratamento por um médico veterinário competente.
+
+Existem muitos tutores…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/doencas-de-pele-em-caes/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/doencas-de-pele-em-caes/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T11:13:04-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/03/dog-423398_1280.jpg</span>
+					   <span itemprop="height">837</span>
+					   <span itemprop="width">1280</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 11:13:04</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 11:13:04</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Doenças de pele em cães</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5314 slide-entry-overview slide-loop-6 slide-parity-odd  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/doencas-neurologicas-em-gatos/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt="Gato com Ferida" data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2021/06/cats-3061372_1920-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2021/06/cats-3061372_1920-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2021/06/cats-3061372_1920-495x400.jpg"><noscript><img width="495" height="400" src="images/cats-3061372_1920-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="Gato com Ferida" srcset="images/cats-3061372_1920-495x400.jpg 495w, images/cats-3061372_1920-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/doencas-neurologicas-em-gatos/" title="Doenças Neurológicas em gatos">Doenças Neurológicas em gatos</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">As doenças neurológicas em gatos se trata de um assunto bastante discutido por diversos tutores em todo o mundo.
+
+A grande verdade é que esses tipos de transtornos podem trazer muita preocupação para os tutores, no entanto essas doenças…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/doencas-neurologicas-em-gatos/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/doencas-neurologicas-em-gatos/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T10:05:57-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2021/06/cats-3061372_1920.jpg</span>
+					   <span itemprop="height">1080</span>
+					   <span itemprop="width">1920</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 10:05:57</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 10:11:45</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Doenças Neurológicas em gatos</span></span></span></article></div><div class="slide-entry-wrap"><article class="slide-entry flex_column  post-entry post-entry-5310 slide-entry-overview slide-loop-7 slide-parity-odd  av_one_third first real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/cao-nao-se-alimentado/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/11/dog-food-g39eb5c5af_1280-1-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/11/dog-food-g39eb5c5af_1280-1-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/11/dog-food-g39eb5c5af_1280-1-495x400.jpg"><noscript><img width="495" height="400" src="images/dog-food-g39eb5c5af_1280-1-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/dog-food-g39eb5c5af_1280-1-495x400.jpg 495w, images/dog-food-g39eb5c5af_1280-1-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/cao-nao-se-alimentado/" title="Cão não se alimentando">Cão não se alimentando</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">Um cão não se alimentando pode ser um fator de grande preocupação para qualquer tutor
+Os cães são animais cada vez mais próximos dos humanos, portanto são animais cada vez mais queridos nas famílias brasileiras.
+
+Como sabemos, ter…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/cao-nao-se-alimentado/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/cao-nao-se-alimentado/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-03-22T09:26:09-03:00">22 de março de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/11/dog-food-g39eb5c5af_1280-1.jpg</span>
+					   <span itemprop="height">853</span>
+					   <span itemprop="width">1280</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-03-22 09:26:09</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-03-22 09:26:09</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Cão não se alimentando</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5298 slide-entry-overview slide-loop-8 slide-parity-even  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/cao-com-medo-de-passear-na-rua/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/02/dog-g3b7e07e5f_640-495x400.jpg"><noscript><img width="495" height="400" src="images/dog-g3b7e07e5f_640-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/cao-com-medo-de-passear-na-rua/" title="Cão com medo de passear na rua">Cão com medo de passear na rua</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">Um cão com medo de passear na rua , certamente pode ser uma situação que pode trazer bastante desconforto para diversos tutores. Isso porque os tutores se se imaginam andando com o seu cãozinho em uma coleira pelas vias urbanas.
+A grande…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/cao-com-medo-de-passear-na-rua/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/cao-com-medo-de-passear-na-rua/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-02-16T09:34:19-03:00">16 de fevereiro de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2023/02/dog-g3b7e07e5f_640.jpg</span>
+					   <span itemprop="height">425</span>
+					   <span itemprop="width">640</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-02-16 09:34:19</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-02-16 09:34:19</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Cão com medo de passear na rua</span></span></span></article><article class="slide-entry flex_column  post-entry post-entry-5296 slide-entry-overview slide-loop-9 slide-parity-odd  post-entry-last  av_one_third  real-thumbnail" itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost"><a href="https://hospitalveterinariosaude.com.br/doencas-virais-em-gatos/" data-rel="slide-1" class="slide-image" title><img width="495" height="400" src="data:image/svg+xml,%3Csvg%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20viewBox=&#x27;0%200%20495%20400&#x27;%3E%3C/svg%3E" class="attachment-portfolio size-portfolio wp-post-image" alt data-lazy-srcset="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/10/pexels-kelvin-valerio-617278-495x400.jpg 495w, https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/10/pexels-kelvin-valerio-617278-845x684.jpg 845w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/10/pexels-kelvin-valerio-617278-495x400.jpg"><noscript><img width="495" height="400" src="images/pexels-kelvin-valerio-617278-495x400.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt srcset="images/pexels-kelvin-valerio-617278-495x400.jpg 495w, images/pexels-kelvin-valerio-617278-845x684.jpg 845w" sizes="(max-width: 495px) 100vw, 495px"></noscript></a><div class="slide-content"><header class="entry-content-header"><span class="blog-categories minor-meta"><a href="https://hospitalveterinariosaude.com.br/category/dicas-sobre-pets/" rel="tag">Dicas Sobre Pets</a> </span><h3 class="slide-entry-title entry-title " itemprop="headline"><a href="https://hospitalveterinariosaude.com.br/doencas-virais-em-gatos/" title="Doenças virais em gatos">Doenças virais em gatos</a></h3><span class="av-vertical-delimiter"></span></header><div class="slide-entry-excerpt entry-content" itemprop="text">A doenças virais em gatos se trata de um assunto bastante relevante na internet, justamente pelo fato de serem preocupantes para gatos de todas as idades.
+
+Hoje em dia os tutores estão cada vez mais preocupados com a saúde dos seus animais,…<div class="read-more-link"><a href="https://hospitalveterinariosaude.com.br/doencas-virais-em-gatos/" class="more-link">Leia mais<span class="more-link-arrow"></span></a></div></div></div><footer class="entry-footer"><div class="slide-meta"><div class="slide-meta-comments"><a href="https://hospitalveterinariosaude.com.br/doencas-virais-em-gatos/#respond">0 Comentários</a></div><div class="slide-meta-del">/</div><time class="slide-meta-time updated" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">16 de fevereiro de 2023</time></div></footer><span class="hidden">
+			<span class="av-structured-data" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2022/10/pexels-kelvin-valerio-617278.jpg</span>
+					   <span itemprop="height">1272</span>
+					   <span itemprop="width">1920</span>
+				  </span><span class="av-structured-data" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope">
+				<span itemprop="name">Agência Kairós</span>
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				   <span itemprop="url">https://hospitalveterinariosaude.com.br/wp-content/uploads/2019/11/logo-site.jpg</span>
+				 </span>
+			  </span><span class="av-structured-data" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person"><span itemprop="name">Agência Kairós</span></span><span class="av-structured-data" itemprop="datePublished" datetime="2023-02-16T09:16:12-03:00">2023-02-16 09:16:12</span><span class="av-structured-data" itemprop="dateModified" itemtype="https://schema.org/dateModified">2023-02-16 09:16:12</span><span class="av-structured-data" itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage"><span itemprop="name">Doenças virais em gatos</span></span></span></article></div></div><div class="avia-slideshow-arrows avia-slideshow-controls"><a href="#prev" class="prev-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Anterior</a><a href="#next" class="next-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Próximo</a></div></div>
+<div style="height:5px" class="hr hr-invisible   avia-builder-el-60  el_after_av_postslider  el_before_av_heading "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<div style="padding-bottom:5px; margin:10 10 10 10; " class="av-special-heading av-special-heading-h2  blockquote modern-quote modern-centered  avia-builder-el-61  el_after_av_hr  el_before_av_hr  "><h2 class="av-special-heading-tag  av-medium-font-size-overwrite av-medium-font-size-21 av-small-font-size-overwrite av-small-font-size-21 av-mini-font-size-overwrite av-mini-font-size-21" itemprop="headline">Deseja receber mais notícias, dicas e novidades sobre seu Pet?</h2><div class="av-subheading av-subheading_below   av-medium-font-size-overwrite av-medium-font-size-14 av-small-font-size-overwrite av-small-font-size-14 av-mini-font-size-overwrite av-mini-font-size-14" style="font-size:12px;"><p>Cadastre-se e receba nossos informativos, sem qualquer custo. Informe seu nome e e-mail no formulário abaixo</p>
+</div><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div style="height:25px" class="hr hr-invisible   avia-builder-el-62  el_after_av_heading  el_before_av_contact "><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+<form action="https://hospitalveterinariosaude.com.br/" method="post" class="avia_ajax_form av-form-labels-hidden   avia-builder-el-63  el_after_av_hr  avia-builder-el-last   " data-avia-form-id="1" data-avia-redirect><fieldset><p class=" first_form  form_element form_element_third" id="element_avia_1_1"><label for="avia_1_1">Nome <abbr class="required" title="required">*</abbr></label> <input name="avia_1_1" class="text_input is_empty" type="text" id="avia_1_1" value placeholder="Nome*"></p><p class=" form_element form_element_third av-last-visible-form-element" id="element_avia_2_1"><label for="avia_2_1">E-Mail <abbr class="required" title="required">*</abbr></label> <input name="avia_2_1" class="text_input is_email" type="text" id="avia_2_1" value placeholder="E-Mail*"></p><p class="hidden"><input type="text" name="avia_3_1" class="hidden " id="avia_3_1" value></p><p class="form_element form_element_third modified_width"><input type="hidden" value="1" name="avia_generated_form1"><input type="submit" value="Enviar Soliciação" class="button" data-sending-label="Sending"></p></fieldset><div class="avia-disabled-forn">This contact form is deactivated because you refused to accept Google reCaptcha service which is necessary to validate any messages sent by the form.</div></form><div id="ajaxresponse_1" class="ajaxresponse ajaxresponse_1 hidden"></div>
+</div></div></div><!-- close content main div --> <!-- section close by builder template -->		</div><!--end builder template--></div><!-- close default .container_wrap element -->						<div class="container_wrap footer_color" id="footer">
+
+					<div class="container">
+
+						<div class="flex_column av_one_third  first el_before_av_one_third"><section id="text-5" class="widget clearfix widget_text"><h3 class="widgettitle">Solicite Nosso Contato</h3>			<div class="textwidget"><p>Rua Nossa Senhora da Saúde, 366<br>
+Jd. Previdência – Zona Sul- São Paulo – SP</p>
+<p>(11) 5594 -1758 – Ou pelo canal abaixo:<br>
+<a href="https://hospitalveterinariosaude.com.br/contato/">Formulário de Contato</a><br>
+<a href="mailto:contato@specialdaynoivas.com.br">contato@hospitalveterinariosaude.com.br</a></p>
+</div>
+		<span class="seperator extralight-border"></span></section></div><div class="flex_column av_one_third  el_after_av_one_third  el_before_av_one_third "><section id="text-6" class="widget clearfix widget_text"><h3 class="widgettitle">Sobre o Hospital Veterinário</h3>			<div class="textwidget"><p>O Hospital Veterinário Saúde é referencia em consultas, cirurgias e internações em São Paulo/SP. Priorizando um atendimento humanizado e personalizado aos nossos pacientes para promovermos uma recuperação breve e confortável.</p>
+<p> </p>
+<p><strong><a href="https://hospitalveterinariosaude.com.br/politica-de-privacidade-lgpd/">Política de Privacidade – LGPD</a></strong></p>
+</div>
+		<span class="seperator extralight-border"></span></section></div><div class="flex_column av_one_third  el_after_av_one_third  el_before_av_one_third "><section id="text-7" class="widget clearfix widget_text"><h3 class="widgettitle">Plantão 24 Horas</h3>			<div class="textwidget"><p>O Hospital Veterinário Saúde funciona 24 horas para casos emergentes. Se você precisa de consultas, cirurgias ou internações, entre em contato conosco pelo botão abaixo. Estamos sempre a disposição no Hospital.</p>
+</div>
+		<span class="seperator extralight-border"></span></section></div>
+
+					</div>
+
+
+				<!-- ####### END FOOTER CONTAINER ####### -->
+				</div>
+
+	
+
+
+			
+
+			
+				<footer class="container_wrap socket_color" id="socket" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+                    <div class="container">
+
+                        <span class="copyright">Copyright © 2019 - Hospital Veterinário Saúde | Desenvolvido por: <strong><a href="https://kairosmarketingdigital.com.br/">Kairós Marketing Digital</a></strong> </span>
+
+                        <ul class="noLightbox social_bookmarks icon_count_4"><li class="social_bookmarks_mail av-social-link-mail social_icon_1"><a aria-label="Link to Mail" href="mailto:contato@hospitalveterinariosaude.com.br" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Mail"><span class="avia_hidden_link_text">Mail</span></a></li><li class="social_bookmarks_twitter av-social-link-twitter social_icon_2"><a target="_blank" aria-label="Link to Twitter" href="https://twitter.com/ClinicaVet24hrs" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Twitter"><span class="avia_hidden_link_text">Twitter</span></a></li><li class="social_bookmarks_facebook av-social-link-facebook social_icon_3"><a target="_blank" aria-label="Link to Facebook" href="https://www.facebook.com/hospitalveterinariosaude/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Facebook"><span class="avia_hidden_link_text">Facebook</span></a></li><li class="social_bookmarks_instagram av-social-link-instagram social_icon_4"><a target="_blank" aria-label="Link to Instagram" href="https://www.instagram.com/hospitalveterinariosaude/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Instagram"><span class="avia_hidden_link_text">Instagram</span></a></li></ul>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<!-- end wrap_all --></div>
+
+<a href="#top" title="Scroll to top" id="scroll-top-link" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+
+ <script type="text/javascript">
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'https://hospitalveterinariosaude.com.br/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'https://hospitalveterinariosaude.com.br/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'https://hospitalveterinariosaude.com.br/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <style type="text/css">
+@media only screen and (min-width: 768px) and (max-width: 989px) { 
+.responsive #top #wrap_all .av-medium-font-size-16{font-size:16px !important;} 
+.responsive #top #wrap_all .av-medium-font-size-13{font-size:13px !important;} 
+.responsive #top #wrap_all .av-medium-font-size-21{font-size:21px !important;} 
+.responsive #top #wrap_all .av-medium-font-size-14{font-size:14px !important;} 
+} 
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+.responsive #top #wrap_all .av-small-font-size-16{font-size:16px !important;} 
+.responsive #top #wrap_all .av-small-font-size-13{font-size:13px !important;} 
+.responsive #top #wrap_all .av-small-font-size-21{font-size:21px !important;} 
+.responsive #top #wrap_all .av-small-font-size-14{font-size:14px !important;} 
+} 
+@media only screen and (max-width: 479px) { 
+.responsive #top #wrap_all .av-mini-font-size-16{font-size:16px !important;} 
+.responsive #top #wrap_all .av-mini-font-size-13{font-size:13px !important;} 
+.responsive #top #wrap_all .av-mini-font-size-21{font-size:21px !important;} 
+.responsive #top #wrap_all .av-mini-font-size-14{font-size:14px !important;} 
+} 
+</style>
+<script type="rocketlazyloadscript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));</script><script type="text/javascript" id="eio-lazy-load-js-before">
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0};
+</script>
+<script type="text/javascript" src="js/lazysizes.min.js" id="eio-lazy-load-js" defer></script>
+<script type="text/javascript" id="stickThis-js-extra">
+/* <![CDATA[ */
+var sticky_anything_engage = {"element":".sidebar","topspace":"0","minscreenwidth":"0","maxscreenwidth":"999999","zindex":"1","legacymode":"","dynamicmode":"1","debugmode":"","pushup":"#footer","adminbar":""};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="js/stickThis.js" id="stickThis-js" defer></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/hospitalveterinariosaude.com.br","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+var mejsL10n = {"language":"pt","strings":{"mejs.download-file":"Fazer download do arquivo","mejs.install-flash":"Voc\u00ea est\u00e1 usando um navegador que n\u00e3o tem Flash ativo ou instalado. Ative o plugin do Flash player ou baixe a \u00faltima vers\u00e3o em https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Tela inteira","mejs.play":"Reproduzir","mejs.pause":"Pausar","mejs.time-slider":"Tempo do slider","mejs.time-help-text":"Use as setas esquerda e direita para avan\u00e7ar um segundo. Acima e abaixo para avan\u00e7ar dez segundos.","mejs.live-broadcast":"Transmiss\u00e3o ao vivo","mejs.volume-help-text":"Use as setas para cima ou para baixo para aumentar ou diminuir o volume.","mejs.unmute":"Desativar mudo","mejs.mute":"Mudo","mejs.volume-slider":"Controle de volume","mejs.video-player":"Tocador de v\u00eddeo","mejs.audio-player":"Tocador de \u00e1udio","mejs.captions-subtitles":"Transcri\u00e7\u00f5es\/Legendas","mejs.captions-chapters":"Cap\u00edtulos","mejs.none":"Nenhum","mejs.afrikaans":"Afric\u00e2ner","mejs.albanian":"Alban\u00eas","mejs.arabic":"\u00c1rabe","mejs.belarusian":"Bielorrusso","mejs.bulgarian":"B\u00falgaro","mejs.catalan":"Catal\u00e3o","mejs.chinese":"Chin\u00eas","mejs.chinese-simplified":"Chin\u00eas (simplificado)","mejs.chinese-traditional":"Chin\u00eas (tradicional)","mejs.croatian":"Croata","mejs.czech":"Checo","mejs.danish":"Dinamarqu\u00eas","mejs.dutch":"Holand\u00eas","mejs.english":"Ingl\u00eas","mejs.estonian":"Estoniano","mejs.filipino":"Filipino","mejs.finnish":"Finland\u00eas","mejs.french":"Franc\u00eas","mejs.galician":"Galega","mejs.german":"Alem\u00e3o","mejs.greek":"Grego","mejs.haitian-creole":"Crioulo haitiano","mejs.hebrew":"Hebraico","mejs.hindi":"Hindi","mejs.hungarian":"H\u00fangaro","mejs.icelandic":"Island\u00eas","mejs.indonesian":"Indon\u00e9sio","mejs.irish":"Irland\u00eas","mejs.italian":"Italiano","mejs.japanese":"Japon\u00eas","mejs.korean":"Coreano","mejs.latvian":"Let\u00e3o","mejs.lithuanian":"Lituano","mejs.macedonian":"Maced\u00f4nio","mejs.malay":"Malaio","mejs.maltese":"Malt\u00eas","mejs.norwegian":"Noruegu\u00eas","mejs.persian":"Persa","mejs.polish":"Polon\u00eas","mejs.portuguese":"Portugu\u00eas","mejs.romanian":"Romeno","mejs.russian":"Russo","mejs.serbian":"S\u00e9rvio","mejs.slovak":"Eslovaco","mejs.slovenian":"Esloveno","mejs.spanish":"Espanhol","mejs.swahili":"Sua\u00edli","mejs.swedish":"Sueco","mejs.tagalog":"Tagalo","mejs.thai":"Tailand\u00eas","mejs.turkish":"Turco","mejs.ukrainian":"Ucraniano","mejs.vietnamese":"Vietnamita","mejs.welsh":"Gal\u00eas","mejs.yiddish":"I\u00eddiche"}};
+</script>
+<script type="text/javascript" src="js/mediaelement-and-player.min.js" id="mediaelement-core-js" defer></script>
+<script type="text/javascript" src="js/mediaelement-migrate.min.js" id="mediaelement-migrate-js" defer></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/wp-mediaelement.min.js" id="wp-mediaelement-js" defer></script>
+<script data-minify="1" type="text/javascript" src="js/avia-footer-scripts-284fddd9ef55222e7d0582aa67e86914.js" id="avia-footer-scripts-js" defer></script>
+
+<script id="avia_gmaps_framework_globals" type="text/javascript">
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+	avia_framework_globals.gmap_api = 'AIzaSyCTd9NTNBwzM9a8Ll3fw1nEl5hXIcgg9p4';
+	avia_framework_globals.gmap_version = '3.35';	
+	avia_framework_globals.gmap_maps_loaded = 'https://maps.googleapis.com/maps/api/js?v=3.35&key=AIzaSyCTd9NTNBwzM9a8Ll3fw1nEl5hXIcgg9p4&callback=aviaOnGoogleMapsLoaded';
+	avia_framework_globals.gmap_builder_maps_loaded = 'https://maps.googleapis.com/maps/api/js?v=3.35&key=AIzaSyCTd9NTNBwzM9a8Ll3fw1nEl5hXIcgg9p4&callback=av_builder_maps_loaded';
+	avia_framework_globals.gmap_backend_maps_loaded = 'https://maps.googleapis.com/maps/api/js?v=3.35&callback=av_backend_maps_loaded';
+	avia_framework_globals.gmap_source = 'https://maps.googleapis.com/maps/api/js?v=3.35&key=AIzaSyCTd9NTNBwzM9a8Ll3fw1nEl5hXIcgg9p4';
+	avia_framework_globals.gmap_avia_api = 'https://hospitalveterinariosaude.com.br/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_api.js';
+/* ]]> */ 
+</script>	
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" class="av-php-sent-to-frontend">/* <![CDATA[ */ 
+var av_google_map = {};
+av_google_map['av_gmap_0'] = {};
+av_google_map['av_gmap_0']['hue'] = "";
+av_google_map['av_gmap_0']['zoom'] = 16;
+av_google_map['av_gmap_0']['saturation'] = "";
+av_google_map['av_gmap_0']['zoom_control'] = 1;
+av_google_map['av_gmap_0']['streetview_control'] = false;
+av_google_map['av_gmap_0']['mobile_drag_control'] = 1;
+av_google_map['av_gmap_0']['maptype_control'] = "dropdown";
+av_google_map['av_gmap_0']['maptype_id'] = "ROADMAP";
+av_google_map['av_gmap_0']['marker'] = {};
+av_google_map['av_gmap_0']['marker']['0'] = {};
+av_google_map['av_gmap_0']['marker']['0']['address'] = "04159-000   R. Nossa Sra. da Sa\u00fade, 366 - Jardim Previdencia";
+av_google_map['av_gmap_0']['marker']['0']['city'] = "S\u00e3o Paulo";
+av_google_map['av_gmap_0']['marker']['0']['country'] = "Brasil";
+av_google_map['av_gmap_0']['marker']['0']['state'] = "SP";
+av_google_map['av_gmap_0']['marker']['0']['long'] = -46.616676600000005;
+av_google_map['av_gmap_0']['marker']['0']['lat'] = -23.6229754;
+av_google_map['av_gmap_0']['marker']['0']['icon'] = "";
+av_google_map['av_gmap_0']['marker']['0']['imagesize'] = 40;
+av_google_map['av_gmap_0']['marker']['0']['content'] = "";
+
+ /* ]]> */</script>
+
+<script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                return;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                return;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img');
+                            is_image = mutation.addedNodes[i].tagName == "IMG";
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async src="js/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script><script type="rocketlazyloadscript" src="js/render.04e6690ddf71350fc4b8.js" async></script>
+
+
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1680107486 --></body></html>
